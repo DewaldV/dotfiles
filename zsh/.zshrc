@@ -5,6 +5,6 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_THEME="robbyrussell"
 ZSH_CUSTOM=${HOME}/.zsh-custom
 
-plugins=(git docker ruby virtualenv virtualenvwrapper)
+plugins=(git docker ruby)
 
 source $ZSH/oh-my-zsh.sh
