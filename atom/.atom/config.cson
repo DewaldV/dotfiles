@@ -1,0 +1,8 @@
+"*":
+  editor:
+    fontFamily: "Hack"
+    fontSize: 17
+    showIndentGuide: true
+    showInvisibles: true
+  welcome:
+    showOnStartup: false
