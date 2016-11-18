@@ -1,8 +1,13 @@
+usage() {
+  dir=${1:-.}
+
+  du -ch --max-depth=1 ${dir} | sort -h
+}
 
 jumpbox() {
-  JUMP_BOX=${1}
-  USER=${2}
-  DOMAIN=${3}
+  box=${1}
+  user=${2}
+  domain=${3}
 
-  rdesktop ${JUMP_BOX} -g 1600x900 -u ${USER} -d ${DOMAIN} -p -
+  rdesktop ${box} -g 1600x900 -u ${user} -d ${domain} -p -
 }
