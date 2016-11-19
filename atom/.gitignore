@@ -7,4 +7,6 @@ dev
 storage
 .node-gyp
 .npm
+.apm
 
+nohup.out
