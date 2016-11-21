@@ -1,4 +1,4 @@
-# oh-my-zsh
+export TERM=xterm-256color
 export ZSH=${HOME}/.oh-my-zsh
 
 HIST_STAMPS="yyyy-mm-dd"
