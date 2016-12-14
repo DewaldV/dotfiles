@@ -11,6 +11,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
@@ -31,6 +32,7 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>r :NERDTree<CR>
 
 set laststatus=2
 set t_Co=256
