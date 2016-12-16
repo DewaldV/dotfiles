@@ -41,4 +41,4 @@ if executable('ag')
   let g:ackprog = 'ag --vimgrep'
 end
 
-colorscheme elflord
+colorscheme onedark
