@@ -4,7 +4,8 @@
 sudo dnf install \
 	stow \
 	powerline \
-	tmux tmux-powerline \
+	tmux \
+	tmux-powerline \
 	vim vim-enhanced \
 	zsh \
 	the_silver_searcher
