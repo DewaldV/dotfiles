@@ -4,10 +4,10 @@ usage() {
   du -ch --max-depth=1 ${dir} | sort -h
 }
 
-jumpbox() {
+rdp() {
   box=${1}
   user=${2}
   domain=${3}
 
-  rdesktop ${box} -g 1600x900 -u ${user} -d ${domain} -p -
+  xfreerdp /size:1600x900 /u:${user} /d:${domain} /v:${box} /clipboard
 }
