@@ -1,0 +1,9 @@
+stow
+powerline
+tmux
+tmux-powerline
+vim
+vim-enhanced
+zsh
+the_silver_searcher
+freerdp
