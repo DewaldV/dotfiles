@@ -1,0 +1,21 @@
+#!/bin/sh
+
+SIGNING_ALGO="sha256"
+MACHINE_KEYS="/etc/machine_keys"
+PRIVATE_KEY="${MACHINE_KEYS}/private_key.priv"
+PUBLIC_KEY="${MACHINE_KEYS}/public_key.der"
+
+sign_mod() {
+  MODULE=${1}
+  KERNEL_VER=${2:-$(uname -r)}
+  MODULE_KO=/lib/modules/${KERNEL_VER}/extra/${MODULE}.ko
+
+  sudo /usr/src/kernels/${KERNEL_VER}/scripts/sign-file ${SIGNING_ALGO} ${PRIVATE_KEY} ${PUBLIC_KEY} ${MODULE_KO}
+  echo "Signed kernel module [${MODULE}] for kernel [${KERNEL_VER}]"
+}
+
+if [ -n "${1}" ]; then
+  sign_mod ${1} ${2}
+else
+  echo "Usage: signmod <module_name> [<kernel_version>]"
+fi

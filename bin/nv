@@ -1,0 +1,36 @@
+#!/bin/sh
+
+BBSWITCH="/proc/acpi/bbswitch"
+
+check() {
+  if [ ! -e "${BBSWITCH}" ]; then
+    echo "bbswitch is not loaded. Loading bbswitch module..."
+    sudo modprobe bbswitch
+  fi
+}
+
+status() {
+  echo "nVidia card is: $(cat ${BBSWITCH})"
+}
+
+switch() {
+  check
+  status
+  echo ${1} | sudo tee "${BBSWITCH}"
+  status
+}
+
+case "${1}" in
+  on)
+    switch ON
+    ;;
+  off)
+    switch OFF
+    ;;
+  sign)
+    signmod "bbswitch" ${2}
+    ;;
+  *)
+    status
+    ;;
+esac
