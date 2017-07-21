@@ -1,0 +1,13 @@
+atom-beautify
+hyperclick
+minimap
+file-icons
+editorconfig
+linter
+linter-ui-default
+intentions
+busy-signal
+language-ansible
+linter-ansible-linting
+language-puppet
+linter-puppet-lint
