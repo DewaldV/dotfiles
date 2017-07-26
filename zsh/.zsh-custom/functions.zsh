@@ -11,3 +11,19 @@ rdp() {
 
   xfreerdp /size:1600x900 /u:${user} /d:${domain} /v:${box} /clipboard
 }
+
+micloop() {
+  state=${1}
+
+  case "${1}z" in
+    onz)
+      pactl load-module module-loopback latency_msec=1
+      ;;
+    offz)
+      pactl unload-module module-loopback
+      ;;
+    *)
+      echo "Usage: micloop [on|off]"
+      ;;
+  esac
+}
