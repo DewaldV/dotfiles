@@ -1,4 +1,4 @@
 
-if [ -e ~/.bin/tmuxinator.zsh ]; do
+if [ -e ~/.bin/tmuxinator.zsh ]; then
   source ~/.bin/tmuxinator.zsh
-done
+fi
