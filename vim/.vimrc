@@ -14,6 +14,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'pearofducks/ansible-vim'
 
 call vundle#end()
 filetype plugin indent on
