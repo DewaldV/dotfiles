@@ -7,7 +7,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'L9'
-Plugin 'tpope/vim-fugitive'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'mileszs/ack.vim'
@@ -15,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'pearofducks/ansible-vim'
+Bundle 'vim-ruby/vim-ruby'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,6 +38,8 @@ nnoremap <leader>y "*y
 nnoremap <leader>Y "+y
 nnoremap <leader>p "*p
 nnoremap <leader>P "+p
+
+nmap <leader>s :w<CR>
 
 set laststatus=2
 set t_Co=256
