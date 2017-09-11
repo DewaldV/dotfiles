@@ -34,6 +34,10 @@ nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>r :NERDTree<CR>
+nnoremap <leader>y "*y
+nnoremap <leader>Y "+y
+nnoremap <leader>p "*p
+nnoremap <leader>P "+p
 
 set laststatus=2
 set t_Co=256

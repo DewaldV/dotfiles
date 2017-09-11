@@ -6,7 +6,7 @@ sudo dnf install \
 	powerline \
 	tmux \
 	tmux-powerline \
-	vim vim-enhanced \
+	vim vim-enhanced vim-X11 \
 	zsh \
 	the_silver_searcher
 
