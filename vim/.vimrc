@@ -18,6 +18,7 @@ Bundle 'vim-ruby/vim-ruby'
 
 call vundle#end()
 filetype plugin indent on
+syntax on
 
 let mapleader=","
 set number
@@ -26,6 +27,7 @@ set wildmenu
 set showmatch
 set incsearch
 set hlsearch
+set noswapfile
 
 nnoremap <leader>/ :nohlsearch<CR>
 nnoremap <leader>u :GundoToggle<CR>
@@ -38,6 +40,10 @@ nnoremap <leader>y "*y
 nnoremap <leader>Y "+y
 nnoremap <leader>p "*p
 nnoremap <leader>P "+p
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
 nmap <leader>s :w<CR>
 
