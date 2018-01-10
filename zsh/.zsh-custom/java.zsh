@@ -1,5 +1,12 @@
 ## Java
-export JAVA_HOME=/usr/lib/jvm/java
+
+if [ "$(uname)" = "Darwin" ]; then
+  export JAVA_HOME=/Library/Java/Home
+fi
+
+if [ "$(uname)" = "Linux" ]; then
+  export JAVA_HOME=/usr/lib/jvm/java
+fi
 
 ## Maven
 MAVEN_DIR='/usr/share/maven'

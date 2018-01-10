@@ -5,3 +5,4 @@ alias tree="tree -C"
 alias srctree="tree -aI .git"
 
 alias jumpbox="rdp"
+alias be="bundle exec"
