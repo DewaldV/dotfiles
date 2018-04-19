@@ -27,3 +27,26 @@ micloop() {
       ;;
   esac
 }
+
+vpn() {
+  name=${1}
+  bin=${HOME}/.vpn/configs/${name}.sh
+
+  ${bin}
+}
+
+ks() {
+  kubectl $@ --namespace=kube-system
+}
+
+kl() {
+  kubectl $@ --namespace=labs
+}
+
+kns() {
+  export KUBENS=$@
+}
+
+kn() {
+  kubectl $@ --namespace=${KUBENS:-default}
+}

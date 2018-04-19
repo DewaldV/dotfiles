@@ -1,7 +1,7 @@
 [user]
-	email = dewald.viljoen@gmail.com
+	email = dewald.viljoen@uswitch.com
 	name = DewaldV
-	signingkey = 797E6B87
+	signingkey = E5670A323C706762698A4BDE572CC96B60D7F823
 [push]
 	default = simple
 [alias]
@@ -12,6 +12,7 @@
 	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 	lg = !"git lg1"
+	pr = pull --rebase --prune
 [http]
 [https]
 [proxy]
