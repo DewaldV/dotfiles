@@ -28,6 +28,9 @@ set showmatch
 set incsearch
 set hlsearch
 set noswapfile
+set list
+
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 nnoremap <leader>/ :nohlsearch<CR>
 nnoremap <leader>u :GundoToggle<CR>

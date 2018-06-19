@@ -44,9 +44,13 @@ kl() {
 }
 
 kns() {
-  export KUBENS=$@
+  export KUBE_NS=$@
 }
 
 kn() {
-  kubectl $@ --namespace=${KUBENS:-default}
+  kubectl $@ --namespace=${KUBE_NS:-default}
+}
+
+git_clean() {
+  git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d
 }
