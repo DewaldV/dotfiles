@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'pearofducks/ansible-vim'
+Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Bundle 'vim-ruby/vim-ruby'
 
 call vundle#end()
