@@ -1,7 +1,7 @@
 ## Java
 
 if [ "$(uname)" = "Darwin" ]; then
-  export JAVA_HOME=/Library/Java/Home
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
 fi
 
 if [ "$(uname)" = "Linux" ]; then
