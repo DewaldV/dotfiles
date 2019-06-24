@@ -4,9 +4,6 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_THEME="robbyrussell"
 ZSH_CUSTOM=${HOME}/.zsh-custom
 
-plugins=(git docker ruby aws kube-ps1 emacs)
-
-export PATH=/usr/local/sbin:${PATH}
+plugins=(git aws emacs)
 
 source $ZSH/oh-my-zsh.sh
-

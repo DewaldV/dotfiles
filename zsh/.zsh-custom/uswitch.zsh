@@ -10,18 +10,18 @@ func godev() {
   cd ${GOPATH}/src/github.com/${1}
 }
 
-func wval() {
+func waval() {
   watson start value $@
 }
 
-func wtoil() {
+func watoil() {
   watson start toil $@
 }
 
-func wadmin() {
-  watson start admin $@
+func waover() {
+  watson start overhead $@
 }
 
-func meeting() {
-  watson start meeting $@
+func wastop() {
+  watson stop
 }

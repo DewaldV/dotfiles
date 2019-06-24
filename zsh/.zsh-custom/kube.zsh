@@ -19,3 +19,7 @@ kc() {
     kubectl config use-context ${1}
   fi
 }
+
+mysql_db() {
+  kubectl run mysql --rm -ti --generator=run-pod/v1 --image=mysql:5.6 --command -- bash
+}
