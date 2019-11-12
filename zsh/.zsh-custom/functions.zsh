@@ -35,22 +35,6 @@ vpn() {
   ${bin}
 }
 
-ks() {
-  kubectl $@ --namespace=kube-system
-}
-
-kl() {
-  kubectl $@ --namespace=labs
-}
-
-kns() {
-  export KUBE_NS=$@
-}
-
-kn() {
-  kubectl $@ --namespace=${KUBE_NS:-default}
-}
-
 git_clean() {
   git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d
 }

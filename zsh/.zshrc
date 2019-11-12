@@ -4,6 +4,6 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_THEME="robbyrussell"
 ZSH_CUSTOM=${HOME}/.zsh-custom
 
-plugins=(git aws emacs)
+plugins=(git aws)
 
 source $ZSH/oh-my-zsh.sh
