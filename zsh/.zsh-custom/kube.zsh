@@ -6,6 +6,18 @@ kn() {
   kubectl $@ --namespace=${KUBE_NS:-default}
 }
 
+knr() {
+  kubectl $@ --namespace=${KUBE_NS:-default} --context red.kube.usw.co
+}
+
+knbu() {
+  kubectl $@ --namespace=${KUBE_NS:-default} --context blue.kube.usw.co
+}
+
+knbk() {
+  kubectl $@ --namespace=${KUBE_NS:-default} --context black.kube.usw.co
+}
+
 kns() {
   export KUBE_NS=$@
 }
