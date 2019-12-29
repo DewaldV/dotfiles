@@ -1,7 +1,7 @@
 [user]
 	email = dewald.viljoen@uswitch.com
 	name = DewaldV
-	signingkey = E5670A323C706762698A4BDE572CC96B60D7F823
+	signingkey = B085043B9BEAD0AE
 [push]
 	default = simple
 [alias]
