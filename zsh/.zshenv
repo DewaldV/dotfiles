@@ -1,7 +1,7 @@
 typeset -U path
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
-#export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/keyring/ssh"
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/keyring/ssh"
 #export DEFAULT_USER=dewald.viljoen
 path=('/usr/local/sbin' $path)
 path+=("${HOME}/bin")
