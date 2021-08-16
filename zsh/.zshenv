@@ -15,7 +15,7 @@ fi
 
 # Golang
 if which go &> /dev/null; then
-    export GOPATH="${HOME}/Dev/go"
+    export GOPATH="${HOME}/.go"
     path+=("${GOPATH}/bin")
 fi
 

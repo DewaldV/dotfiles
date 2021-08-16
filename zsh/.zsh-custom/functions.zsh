@@ -36,5 +36,5 @@ vpn() {
 }
 
 git_clean() {
-  git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d
+  git branch --merged | egrep -v "(^\*|master|main)" | xargs git branch -d
 }
