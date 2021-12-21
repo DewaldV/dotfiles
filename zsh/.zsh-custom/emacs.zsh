@@ -1,6 +1,6 @@
-export EDITOR="emacsclient -t"
-export VISUAL="emacsclient -c"
+#export EDITOR="emacsclient -t"
+#export VISUAL="emacsclient -c"
 
-alias en="emacsclient -nc"
-alias e="emacsclient -c"
-alias et="emacsclient -t"
+#alias en="emacsclient -nc"
+#alias e="emacsclient -c"
+#alias et="emacsclient -t"
