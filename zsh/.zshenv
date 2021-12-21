@@ -19,15 +19,6 @@ if which go &> /dev/null; then
     path+=("${GOPATH}/bin")
 fi
 
-# Java
-if [ "$(uname)" = "Darwin" ]; then
-    export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
-fi
-
-if [ "$(uname)" = "Linux" ]; then
-    export JAVA_HOME=/usr/lib/jvm/java
-fi
-
 # Maven
 MAVEN_DIR='/usr/share/maven'
 if [ -d ${MAVEN_DIR} ]; then
