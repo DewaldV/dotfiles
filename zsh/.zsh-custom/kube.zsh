@@ -18,6 +18,14 @@ knbk() {
   kubectl $@ --namespace=${KUBE_NS:-default} --context black.kube.usw.co
 }
 
+knek1() {
+  kubectl $@ --namespace=${KUBE_NS:-default} --context "eks-01"
+}
+
+knek2() {
+  kubectl $@ --namespace=${KUBE_NS:-default} --context "eks-02"
+}
+
 kns() {
   export KUBE_NS=$@
 }
