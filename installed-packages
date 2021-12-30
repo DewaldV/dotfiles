@@ -1,0 +1,11 @@
+cmake make gcc
+flameshot
+fonts-hack
+gnome-tweaks
+liballegro5.2
+libsdl2-net-2.0-0
+mangohud
+nordvpn
+openjdk-17-jre
+libvirt-daemon-system libvirt-clients qemu-kvm qemu-utils virt-manager ovmf
+-y editorconfig emacs fd-find powerline ripgrep shellcheck silversearcher-ag stow tmux zsh
