@@ -1,6 +1,0 @@
-[Allow user libvirt management permissions]
-Identity=unix-user:dewaldv
-Action=org.libvirt.unix.manage
-ResultAny=yes
-ResultInactive=yes
-ResultActive=yes
