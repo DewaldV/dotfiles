@@ -14,10 +14,6 @@ knbu() {
   kubectl $@ --namespace=${KUBE_NS:-default} --context blue.kube.usw.co
 }
 
-knbk() {
-  kubectl $@ --namespace=${KUBE_NS:-default} --context black.kube.usw.co
-}
-
 knek1() {
   kubectl $@ --namespace=${KUBE_NS:-default} --context "eks-01"
 }
