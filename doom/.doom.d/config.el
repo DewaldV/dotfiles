@@ -36,6 +36,8 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+;; Turn off Deep indents for ruby-mode
+(setq ruby-deep-indent-paren nil)
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
