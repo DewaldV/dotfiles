@@ -26,3 +26,5 @@ if [ -d ${MAVEN_DIR} ]; then
     export M3_HOME=${M3}
     export MAVEN_OPTS='-Xms256m -Xmx512m'
 fi
+
+if [ -e /home/dewaldv/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dewaldv/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
