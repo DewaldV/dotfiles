@@ -6,4 +6,6 @@ ZSH_CUSTOM=${HOME}/.zsh-custom
 
 plugins=(git aws asdf emacs)
 
+path+=("${HOME}/.local/bin")
+
 source $ZSH/oh-my-zsh.sh
