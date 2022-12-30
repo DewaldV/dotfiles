@@ -39,3 +39,11 @@ kc() {
 mysql_db() {
   kubectl run mysql --rm -ti --generator=run-pod/v1 --image=mysql:5.6 --command -- bash
 }
+
+kcdel() {
+  local cluster_name=$(kubectl config get-clusters | grep ${1})
+  local user_name=$(kubectl config get-clusters | grep ${1})
+  kubectl config delete-cluster ${cluster_name}
+  kubectl config delete-user ${user_name}
+  kubectl config delete-context ${1}
+}
