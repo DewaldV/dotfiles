@@ -1,7 +1,7 @@
 [user]
 	email = dewald.viljoen@rvu.co.uk
 	name = DewaldV
-	signingkey = CE0200BFE52B156E
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMYV7aiA/Iu1NJWA/i3NB/eazTJafGSqrm7LCPaIzwQ8
 [push]
 	default = simple
 [alias]
@@ -29,3 +29,10 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = "op-ssh-sign"
+	allowedSignersFile = "/home/dewaldv/.ssh/allowed_signers"
